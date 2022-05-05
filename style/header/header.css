@@ -28,9 +28,6 @@
     padding: 12px;
 }
 
-.header__button{
-    display: flex;
-}
 
 .header-button-col{
     justify-content: right;

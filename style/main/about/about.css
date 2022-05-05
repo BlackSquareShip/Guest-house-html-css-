@@ -72,6 +72,14 @@
 }
 
 .subAbout__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
     padding: 20px;
+}
+
+.subAbout__button{
+    background-color: #52503B;
+    color: white;
 }
