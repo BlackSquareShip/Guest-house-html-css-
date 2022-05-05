@@ -1,0 +1,77 @@
+.about{
+    background: url(../../../images/IMAGEbg_house.png), #ceab96;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.about__logo{
+    height: 90px;
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.about__header{  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: white;
+    text-align: center;
+}
+
+.about__subheader{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about__mouse{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    vertical-align: bottom;
+}
+
+.subAbout{
+    height: 410px;
+    background-color: #FAF8F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subAbout__content{
+    max-width: 800px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subAbout__texts{
+    display: flex;
+}
+
+.subAbout__text{
+    width: 50%;
+    padding: 20px;
+}

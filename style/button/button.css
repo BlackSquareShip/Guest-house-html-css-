@@ -1,0 +1,14 @@
+.button{ 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #52503B; 
+    background-color:white;
+    border-radius: 6px;
+    padding: 11px 18px;
+    border: none;
+    cursor: pointer;
+}
+

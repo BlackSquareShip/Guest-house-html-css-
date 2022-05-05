@@ -1,48 +1,6 @@
-body{
-    margin: 0;  
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-/*header
-==============*/
-
-.header {
-    background-color: #52503B;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-}
-
-.header_links a{
-    margin:0 12px;
-}
-
-.book_now{
-    background-color: white;
-    color: #52503B;
-    border-radius: 6px;
-}
-
-.book_now div{
-    margin:11px 18px;
-    font-size: 16px;
-}
-
-.main{
-    background: url(images/IMAGEbg_house.png), #ceab96;
-    background-repeat: no-repeat;
-    height: 800px;
-    background-position: center;
-    background-size: cover;
-}
+@import "style/header/header.css";
+@import "style/links/link.css";
+@import "style/button/button.css";
+@import "style/main/about/about.css";
+@import "style/text/text.css";
+@import "style/hr/hr.css";
