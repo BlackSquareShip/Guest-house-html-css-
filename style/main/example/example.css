@@ -1,0 +1,26 @@
+.example{
+    height: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.example__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    color: #52503B;
+    padding-top: 15px;
+}
+
+.example__bg{
+    background: url(../../../images/IMAGEexample-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}

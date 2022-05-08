@@ -4,3 +4,8 @@
 @import "style/main/about/about.css";
 @import "style/text/text.css";
 @import "style/hr/hr.css";
+@import "style/main/example/example.css";
+@import "style/main/sleeping/sleeping.css";
+@import "style/container/container.css";
+@import "style/title/title.css";
+@import "style/main/escape/escape.css"

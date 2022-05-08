@@ -5,12 +5,15 @@
     width: 100%;
     align-items: center;
     position: fixed;
+    justify-content: center;
 }
 
 .header__row{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header__col{
