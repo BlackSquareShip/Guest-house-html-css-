@@ -8,4 +8,6 @@
 @import "style/main/sleeping/sleeping.css";
 @import "style/container/container.css";
 @import "style/title/title.css";
-@import "style/main/escape/escape.css"
+@import "style/main/escape/escape.css";
+@import "style/content.css";
+@import "style/blocks.css";

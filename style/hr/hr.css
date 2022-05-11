@@ -4,5 +4,9 @@ hr{
     background-color: #E08631;
     border: none;
     padding: 0;
-    margin: 13px auto;
+    margin: 13px 0;
+}
+
+.center-hr{
+    margin: 13px 0;
 }

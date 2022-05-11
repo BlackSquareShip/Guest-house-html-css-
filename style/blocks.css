@@ -1,0 +1,41 @@
+.blocks-inner{
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 336px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block{
+    display: flex;
+    width: 50%;
+    margin: 15px 0;
+}
+
+.block__img{
+    height: 100%;  
+}
+
+.block-text{
+    padding: 0 15px;
+}
+
+.block-text__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #52503B;
+}
+
+.block-text__article{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
