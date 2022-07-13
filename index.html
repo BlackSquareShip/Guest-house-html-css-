@@ -196,24 +196,47 @@
                         let reviewsElem = document.querySelectorAll('.review');
                         let reviews = document.querySelector('.reviews');
                         let position = 0;
-                        let mainHeight = 266;
+                        let mainWidth = 584;
+                        let mainHeight = 246;
                         let secondHeight = 246;
                         let thirdHeight = 206;
+                        reviewPosition = getComputedStyle(reviews);
 
-                        reviewsElem[0].style.height = mainHeight + 'px';
+                        reviewsElem[0].style.height = mainHeight + 20 + 'px';
                         reviewsElem[1].style.height = secondHeight + 'px';
                         reviewsElem[2].style.height = thirdHeight + 'px';
 
                         forward.onclick = function(event){
-                            let clon = reviewsElem[0].cloneNode(true);
-                            reviewsElem[0].remove();
-                            reviews.append(clon);
-                            reviewsElem = document.querySelectorAll('.review');
-                                
-                            reviewsElem[0].style.height = mainHeight + 'px';
-                            reviewsElem[1].style.height = mainHeight - 20 + 'px';
-                            reviewsElem[2].style.height = mainHeight - 60 + 'px';
-                        }
+                            //let clon = reviewsElem[0].cloneNode(true);
+                            //reviewsElem[0].remove();
+                            //reviews.append(clon);
+                            //reviewsElem = document.querySelectorAll('.review');
+                            if (position >=2) return;
+
+                            reviews.style.marginLeft = +reviewPosition.marginLeft.slice(0, -2) - mainWidth * 2+ 'px';
+                            reviewPosition = getComputedStyle(reviews);
+
+                            position += 1;
+
+                            reviewsElem[position].style.height = mainHeight + 20 + 'px';
+                            reviewsElem[position - 1].style.height = mainHeight + 'px';
+                            reviewsElem[position + 1].style.height = mainHeight + 'px';
+
+                        };
+
+                        back.onclick = function(e){
+                            if(position <= 0) return;
+
+                            reviews.style.marginLeft = +reviewPosition.marginLeft.slice(0, -2) + mainWidth * 2 + 'px';
+                            reviewPosition = getComputedStyle(reviews);
+
+                            position -= 1;
+                            reviewsElem[position].style.height = mainHeight + 20 + 'px';
+                            reviewsElem[position + 1].style.height = mainHeight + 'px';
+                            reviewsElem[position + 2].style.height = mainHeight - 40 + 'px';
+                            reviewsElem[position - 1].style.height = mainHeight + 'px';
+
+                        };
                     </script>
                 </div>
             </div>
