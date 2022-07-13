@@ -1,0 +1,19 @@
+.together{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.together__header{
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+}
+
+.together__subtitle{
+    text-align: left;
+}
+
+.together__content{
+    flex-direction: row;
+    align-items: center;
+}
