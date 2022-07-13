@@ -23,14 +23,20 @@
     display: flex;
     position: relative;
     margin-left: 900px;
+    transition: all 1s;
 }
 
 .review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #fff;
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
+    height: 266px;
     width: 584px;
+    border: 1px solid rgba(82, 80, 59, 0.1); 
 }
 
 .review__title{
@@ -49,6 +55,8 @@
     font-size: 14px;
     line-height: 20px;
     color: #333333;
+    width: 506px;
+    height: 100px;
 }
 
 .review__name{

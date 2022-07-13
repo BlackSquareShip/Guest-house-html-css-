@@ -189,6 +189,32 @@
                     </div>
                     
                     <div class="circles"><img src="images/Rectanglecircle.png" alt="" class="circle back"> <img src="images/Rectanglecircle.png" alt="" class="circle forward"></div>
+
+                    <script>
+                        let forward = document.querySelector('.forward');
+                        let back = document.querySelector('.back');
+                        let reviewsElem = document.querySelectorAll('.review');
+                        let reviews = document.querySelector('.reviews');
+                        let position = 0;
+                        let mainHeight = 266;
+                        let secondHeight = 246;
+                        let thirdHeight = 206;
+
+                        reviewsElem[0].style.height = mainHeight + 'px';
+                        reviewsElem[1].style.height = secondHeight + 'px';
+                        reviewsElem[2].style.height = thirdHeight + 'px';
+
+                        forward.onclick = function(event){
+                            let clon = reviewsElem[0].cloneNode(true);
+                            reviewsElem[0].remove();
+                            reviews.append(clon);
+                            reviewsElem = document.querySelectorAll('.review');
+                                
+                            reviewsElem[0].style.height = mainHeight + 'px';
+                            reviewsElem[1].style.height = mainHeight - 20 + 'px';
+                            reviewsElem[2].style.height = mainHeight - 60 + 'px';
+                        }
+                    </script>
                 </div>
             </div>
         </div>
