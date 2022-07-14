@@ -1,0 +1,25 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.contact__header{
+    width: 533px;
+}
+
+.contact__subtitle{
+    width: 100%;
+}
+
+.contact__buttons{
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.contact__button{
+    border: 4px solid #52503B;
+    background: #FAF8F0;
+}

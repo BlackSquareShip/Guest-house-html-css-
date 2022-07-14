@@ -6,6 +6,7 @@
     align-items: center;
     position: fixed;
     justify-content: center;
+    z-index: 20;
 }
 
 .header__row{

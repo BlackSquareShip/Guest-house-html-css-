@@ -4,16 +4,20 @@
     align-items: center;
 }
 .together__header{
-display: flex;
-flex-direction: column;
-align-items:flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-right: 105px;
 }
 
 .together__subtitle{
     text-align: left;
+    width: 514px;
+    height: 48px;
 }
 
 .together__content{
     flex-direction: row;
     align-items: center;
 }
+

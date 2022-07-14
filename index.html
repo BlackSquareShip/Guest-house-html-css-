@@ -26,7 +26,8 @@
             </div>
         </div>
     </div>
-    <div class="main">
+
+    <div class="main" id="start">
         <div class="about">
             <div class="container">
                 <div class="about__content">
@@ -87,7 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="escape">
+
+        <div class="escape" id="escape">
             <div class="container">
                 <div class="escape__content content__right">
                     <div class="escape__header">
@@ -187,64 +189,16 @@
                             <div class="review__inside review__name review__alert">Greg Todd</div>
                         </div>
                     </div>
-                    
+                    <script src="script.js"></script>
                     <div class="circles"><img src="images/Rectanglecircle.png" alt="" class="circle back"> <img src="images/Rectanglecircle.png" alt="" class="circle forward"></div>
 
-                    <script>
-                        let forward = document.querySelector('.forward');
-                        let back = document.querySelector('.back');
-                        let reviewsElem = document.querySelectorAll('.review');
-                        let reviews = document.querySelector('.reviews');
-                        let position = 0;
-                        let mainWidth = 584;
-                        let mainHeight = 246;
-                        let secondHeight = 246;
-                        let thirdHeight = 206;
-                        reviewPosition = getComputedStyle(reviews);
-
-                        reviewsElem[0].style.height = mainHeight + 20 + 'px';
-                        reviewsElem[1].style.height = secondHeight + 'px';
-                        reviewsElem[2].style.height = thirdHeight + 'px';
-
-                        forward.onclick = function(event){
-                            //let clon = reviewsElem[0].cloneNode(true);
-                            //reviewsElem[0].remove();
-                            //reviews.append(clon);
-                            //reviewsElem = document.querySelectorAll('.review');
-                            if (position >=2) return;
-
-                            reviews.style.marginLeft = +reviewPosition.marginLeft.slice(0, -2) - mainWidth * 2+ 'px';
-                            reviewPosition = getComputedStyle(reviews);
-
-                            position += 1;
-
-                            reviewsElem[position].style.height = mainHeight + 20 + 'px';
-                            reviewsElem[position - 1].style.height = mainHeight + 'px';
-                            reviewsElem[position + 1].style.height = mainHeight + 'px';
-
-                        };
-
-                        back.onclick = function(e){
-                            if(position <= 0) return;
-
-                            reviews.style.marginLeft = +reviewPosition.marginLeft.slice(0, -2) + mainWidth * 2 + 'px';
-                            reviewPosition = getComputedStyle(reviews);
-
-                            position -= 1;
-                            reviewsElem[position].style.height = mainHeight + 20 + 'px';
-                            reviewsElem[position + 1].style.height = mainHeight + 'px';
-                            reviewsElem[position + 2].style.height = mainHeight - 40 + 'px';
-                            reviewsElem[position - 1].style.height = mainHeight + 'px';
-
-                        };
-                    </script>
+                   
                 </div>
             </div>
         </div>
 
 
         <div class="pasts__bg"></div>
-    </div>
 
     <div class="together" style="height: 366px;">
         <div class="container">
@@ -285,11 +239,57 @@
     </div>
 
     <div class="contact" style="height:478px; background-color: #FAF8F0;">
-
+        <div class="container">
+            <div class="contact__content content__center">
+                <hr>
+                <div class="contact__header article__header">
+                    <div class="contact__title title">We're already booked up for the spring — hurry up & secure your stay for the summer.</div>
+                    <div class="contact__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</div>
+                </div>
+                <div class="contact__buttons">
+                    <div class="button contact__button">Contact</div>
+                    <div class="button subAbout__button">Book now</div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <footer class="footer" style="height:608px; background-color: #52503B;">
-
+        <div class="container">
+            <div class="footer__top">
+                <div class="navigation">
+                    <div class="footer__header">Pages</div>
+                    <a href="#start" class="link"><div class="navigation__link link">Start</div></a>
+                    <a href="#contact" class="link"><div class="navigation__link link">Contact</div></a>
+                    <a href="#history" class="link"><div class="navigation__link link">Our history</div></a>
+                    <a href="#licenses" class="link"><div class="navigation__link link">Licenses</div></a>
+                    <a href="#instructions" class="link"><div class="navigation__link link">Instructions</div></a>
+                    <a href="#guide" class="link"><div class="navigation__link link">Style guide</div></a>
+                </div>
+                <div class="media">
+                    <div class="footer__header">Social Media</div>
+                    <div class="media__links">
+                        <a href=""><img src="images/Shape.png" alt=""></a>
+                        <a href=""><img src="images/Shapefb.png" alt=""></a>
+                        <a href=""><img src="images/Combined-Shapein.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <div class="footer__header">Newsletter</div>
+                    <div class="footer__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</div>
+                    <div class="input__form">
+                        <input type="email" placeholder="Email" name="" id="" class="footer__input">
+                        <button class="input__button">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__about">
+                <div class="footer__logo"><img src="images/Combined-Shapefooter-logo.png" alt=""></div>
+                <div class="sertification subtitle">© Guest House, LLC. All rights reserved. Powered by Webflow</div>
+                <div class="contacts subtitle">+47 (0) 702 88 12 34 — example@webflow.io — Klubbvika 12, 8310 Kabelvag, Norway</div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
